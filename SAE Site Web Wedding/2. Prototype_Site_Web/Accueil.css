@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+*{color: inherit; text-decoration: inherit; background: inherit;}
+
+h1, a{font-family: 'Playfair Display', serif;}
+
+p{font-family: 'Arial'; font-size: 1.5em;}
+
+a:hover{
+	text-decoration: underline;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #FDF2DF;
+	color: #63AC6F;
+	overflow-x: hidden;
+}
+
+header{
+	position: sticky;
+	z-index: 10;
+	top: 0px;
+	width: 100vw;
+	height: 100px;
+	background: #FDF2DF;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+nav *{
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 200px;
+	display: flex;
+	background: none;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.page-accueil{
+	height: calc(100vh - 200px);
+}
+
+.fond{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 500px;
+	width: 80vh;
+}
+
+.fond img{
+	width: auto;
+	height: 50vh;
+	opacity: .75;
+}
+
+.photo_couple{
+	position: absolute;
+	z-index: 0;
+	width: auto;
+	height: 70vh;
+}
+
+.photo_couple-2{
+	z-index: 0;
+	width: auto;
+	height: 80vh;
+}
+
+.photo_couple-3{
+	z-index: 0;
+	width: auto;
+	height: 80vh;
+}
+
+.nom_couple{
+	z-index: 1;
+	font-size: 6em;
+	text-align: center;
+}
+
+.info{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	bottom: 0px;
+}
+
+.info *{
+	width: 300px;
+}
+
+.langue a{
+	margin: 10px;
+}
+
+.page-info{
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.page-info a{
+	font-size: 1.5em;
+}
+
+.Dates-Lieu{
+	width: 50vw;
+}
+
+.citation{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 80vh;
+	text-align: center;
+}
+
+.conception{
+	position: relative;
+	width: 100vw;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+[class*="citation-"]::before{
+	content: "♥";
+}
+
+
+[class*="reveal-"]{
+	opacity: 0;
+	transform: translateY(-10vh);
+}
+
+.reveal-visible{
+	opacity: 1;
+	transform: translateY(0);
+	transition: 1s cubic-bezier(0,1.08,1,1);
+}
+
+.reveal-2{
+	transition-delay: .5s;
+}
+
+.reveal-3{
+	transition-delay: 1s;
+}
+
+.reveal-4{
+	transition-delay: 1.5s;
+}
+
+.reveal-5{
+	transition-delay: 2s;
+}
+
