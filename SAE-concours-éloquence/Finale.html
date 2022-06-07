@@ -53,17 +53,25 @@
 
     <section>
         <div class="carrousel">
-            <h3>Une finale intense s’est produite le 14 avril 2022 !</h3>
+            <span class="fleche gauche">
+                &lt;
+            </span>
+            <span class="fleche droite">
+                &gt;
+            </span>
+
+            <h1>Une finale intense s’est produite le 14 avril 2022 !</h1>
             <div class="content">
                 <img src="./Assets/amphi1.png" alt="amphi1">
                 <img src="./Assets/amphi2.png" alt="amphi2">
+                <img src="./Assets/Ann n°5.jpg" alt="Ann">
+                <img src="./Assets/Brunella n°11.jpg" alt="Bru">
+                <img src="./Assets/Kaïs n°2.jpg" alt="Kaïs">
             </div>
-            <span class="fleche-gauche">
-                &lt;
-            </span>
-            <span class="fleche-gauche">
-                &gt;
-            </span>
+        </div>
+
+        <div class="text-content">
+            <h1>Elocutio, la parole est A vous !</h1>
         </div>
     </section>
 
@@ -99,4 +107,26 @@
         </div>
     </footer>
 
+    <script>
+        const flecheGauche = document.querySelector('.gauche')
+        const flecheDroite = document.querySelector('.droite')
+        const carrousel = document.querySelector('.content')
+        const numberImage = carrousel.querySelectorAll('img').length - 1
+        const sizeImage = window.innerWidth
+        let position = 0;
+
+        flecheGauche.addEventListener('click', function(){
+            if (position < 0) {
+                position += sizeImage
+                carrousel.style.left = position + 'px'
+            }
+        })
+
+        flecheDroite.addEventListener('click', function(){
+            if (position > -(numberImage * sizeImage)) {
+                position -= sizeImage
+                carrousel.style.left = position + 'px'
+            }
+        })
+    </script>
 </body>
