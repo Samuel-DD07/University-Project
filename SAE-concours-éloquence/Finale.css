@@ -47,7 +47,7 @@ body{
 header{
     position: sticky;
     display: flex;
-    top: 0px;
+    top: 38px;
     z-index: 10;
     padding-top: 20px;
     justify-content: space-between;
@@ -242,6 +242,10 @@ div video{
     justify-content: space-between;
     align-items: center;
     width: 80%;
+}
+
+.classement * {
+    text-shadow: 1px 1px 2px black;
 }
 
 footer{

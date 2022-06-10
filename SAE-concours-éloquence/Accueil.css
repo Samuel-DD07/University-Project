@@ -47,7 +47,7 @@ body{
 header{
     position: sticky;
     display: flex;
-    top: 0px;
+    top: 38px;
     z-index: 10;
     padding-top: 20px;
     justify-content: space-between;

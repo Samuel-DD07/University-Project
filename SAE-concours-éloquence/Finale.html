@@ -31,20 +31,19 @@
 
             <ul class="link-2">
                 <li>
-                    <a href="Contact">NOUS CONTACTER</a>
+                    <a href="mailto:elocutio.parisnord@gmail.com">NOUS CONTACTER</a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/elocutio_paris_nord/">
                         <img src="./Assets/instagram.svg" alt="logo-instagram" class="logo-icons-1">
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <img src="./Assets/YouTube.svg" alt="logo-youtube" class="logo-icons-2">
+                    </a>
+                </li>
             </ul>
-
-            <div class="link-3">
-                <a href="En">En</a>
-                <div class="barre"></div>
-                <a href="Fr">Fr</a>
-            </div>
         </nav>
 
         <img src="./Assets/menu.svg" alt="menu" class="menu">
@@ -100,16 +99,16 @@
         </div>
 
         <div class="text-content" style="background: url('./Assets/Participants.png'); background-size: cover; background-position: center; color: white;">
-            <h1>Resume du concours d'eloquence.</h1>
+            <h1 style="text-shadow: 1px 1px 2px black;">Resume du concours d'eloquence.</h1>
             <br><br>
             <div class="classement">
                 <ul><p><strong>Classement final du concours d'eloquence :</strong></p>
                     <br>
-                    <ol><p>Premiere Place : Son blaze</p></ol>
+                    <ol><p>Premiere Place : Kaïs</p></ol>
                     <br>
-                    <ol><p>Premiere Place : Son blaze</p></ol>
+                    <ol><p>Premiere Place : Tinhinane</p></ol>
                     <br>
-                    <ol><p>Deuxième Place : Son blaze</p></ol>
+                    <ol><p>Deuxième Place : Sylla</p></ol>
                 </ul>
 
                 <ul><p><strong>Prix des gagants : </strong></p>
@@ -193,7 +192,7 @@
 
         <div class="footer-3">
             <h3>MENTIONS LEGALES</h3>
-            <a href="">Page juridique</a>
+            <a href="./pagejuridique.docx.html">Page juridique</a>
             <p>Tous droits reserves / Elocucio Paris Nord</p>
         </div>
 
@@ -208,6 +207,7 @@
             </span>
         </div>
     </footer>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 
     <script>
         const carrousel = document.querySelectorAll('.content')
@@ -232,5 +232,11 @@
                     }
             })
         })
+
+        function loadGoogleTranslate(){
+            new google.translate.TranslateElement(
+                "translate"
+            )
+        }
     </script>
 </body>
